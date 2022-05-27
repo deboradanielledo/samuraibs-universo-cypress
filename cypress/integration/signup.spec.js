@@ -66,8 +66,8 @@ import signupPage from '../support/pages/signup'
 		context('quando o email é incorreto', function(){
 			const user = {
 				name: 'Elizabeth Olsen',
-				email: 'liza@yahoo.com',
-				password: 'pwd12',
+				email: 'liza.yahoo.com',
+				password: 'pwd123',
 			}
 
 			it('deve exibir mensagem de alerta', function(){
@@ -103,7 +103,7 @@ import signupPage from '../support/pages/signup'
 
 		})
 
-		context.only('quando não preencho nenhum dos campos', function(){
+		context('quando não preencho nenhum dos campos', function(){
 
 			const alertMessages = [
 				'Nome é obrigatório',
